@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient();
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async (_event) => {
   // await prisma.user.create({
   //   data: {
   //     name: 'Alice',

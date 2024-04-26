@@ -1,10 +1,9 @@
 <script setup lang="ts">
-const { data: user } = await useFetch('/api/user');
+import '@unocss/reset/tailwind.css'
 </script>
 
 <template>
-  <div>
-    {{ user }}
-    <!-- <NuxtWelcome /> -->
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

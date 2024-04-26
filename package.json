@@ -7,17 +7,27 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/content": "^2.12.1",
+    "@nuxt/ui": "^2.15.2",
     "@prisma/client": "^5.13.0",
+    "@unocss/reset": "^0.59.4",
     "nuxt": "^3.11.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^3.9.1",
-    "@sxzz/prettier-config": "^2.0.2",
-    "prisma": "^5.13.0"
+    "@antfu/eslint-config": "^2.16.0",
+    "@iconify/json": "^2.2.204",
+    "@nuxt/eslint": "^0.3.10",
+    "@nuxtjs/color-mode": "^3.4.0",
+    "@unocss/nuxt": "^0.59.4",
+    "eslint": "^9.1.1",
+    "prisma": "^5.13.0",
+    "unocss": "^0.59.4"
   }
 }
