@@ -5,18 +5,21 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
     '@nuxt/ui',
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-icon'
   ],
+  css: ['~/assets/css/index.css'],
   colorMode: {
-      preference: 'system', // default value of $colorMode.preference
-      fallback: 'light', // fallback value if not system preference found
-      classSuffix: '-theme-mode',
-      storageKey: 'nuxt-color-mode'
+    classSuffix: '',
   },
   eslint: {
     config: {
       stylistic: true
     }
+  },
+  sourcemap: {
+    server: true,
+    client: true
   },
   devtools: { enabled: true }
 })
